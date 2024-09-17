@@ -178,12 +178,10 @@ def respond(text):
         say("I AM FINE, THANKS ")
 
 
-    elif "who is Kavita mam" in text or "who is Kavitha mam" in text or "who is Kavitha ma'am" in text or "who is Kavita ma'am" in text:
-        print("  A COMPUTER SCIENCE TEACHER OF ASIAN CHRISTIAN HIGH SCHOOL, AND SHE WAS THE CLASS TEACHER OF 11B2 ")
-        say("A COMPUTER SCIENCE TEACHER, OF ASIAN CHRISTIAN HIGH SCHOOL, AND SHE WAS THE CLASS TEACHER OF, eleven B2 ")
 
 
-    # FOR OPENING WEBSITES
+
+
 
 
     elif "open WhatsApp" in text:
@@ -288,7 +286,7 @@ def respond(text):
 
 
 
-    # OPENING AND CLOSING
+
 
     elif "open Notepad" in text:
         print("  OPENING NOTEPAD..")
@@ -300,7 +298,7 @@ def respond(text):
         say("CLOSING NOTEPAD..")
         os.system("TASKKILL /F /IM notepad.exe")
 
-    # TAKING NOTE
+
 
     elif "take a note" in text:
         print("  TAKING DOWN")
@@ -313,38 +311,38 @@ def respond(text):
         say("NOTE SAVED")
 
 
-    # LOGING IN MEGA
+
 
     elif "login Mega" in text:
         print("  LOGING IN MEGA..")
         say("LOGING IN MEGA..")
         webbrowser.open("https://mega.nz/login")
         time.sleep(10)
-        pyautogui.write("signinsignupacc@gmail.com")
+        pyautogui.write("#ur gmail")
         pyautogui.press("enter")
-        pyautogui.write("signinsignupacc@0005")
+        pyautogui.write("#password")
         pyautogui.press("enter")
         exit()
 
-    # FOR TIME
+
 
     elif "what is the time" in text or "what's the time" in text or "time" in text:
         print("  The Time is : ", get_time())
         say(get_time())
 
-    # FOR DATE
+
 
     elif "what is today's date" in text or "date" in text:
         print("  The Date is : ", get_date())
         say(get_date())
 
-    # TAKING SCREENSHOT
+
 
     elif "take screenshot" in text or "screenshot" in text or "capture" in text:
         ss()
 
 
-    # VOLUME
+
 
     elif "volume up" in text or "increase the volume" in text:
         pyautogui.press("volumeup")
@@ -358,12 +356,12 @@ def respond(text):
     elif "volume mute" in text or "mute the volume" in text:
         pyautogui.press("volumemute")
 
-    # CAMERA
+
 
     elif "camera" in text or "take a photo" in text :
         ec.capture(0, "saro camera", "TS.jpg")
 
-    # SEARCHING IN WIKIPEDIA
+
 
     elif 'search in Wikipedia for' in text:
         query = text.replace("search in Wikipedia for", "")
@@ -377,7 +375,7 @@ def respond(text):
 
 
 
-    # SEARCHING IN YOUTUBE
+
 
     elif "search in youtube for" in text.lower():
         ind = text.lower().split().index("for")
@@ -389,7 +387,7 @@ def respond(text):
         say("results in youtube for"), say(search)
         exit()
 
-    # SEARCHING IN GOOGLE
+
 
     elif "search in google" in text.lower():
         ind = text.lower().split().index("for")
@@ -402,7 +400,7 @@ def respond(text):
 
 
 
-    # CHANGING BACKGROUND
+
 
     elif "change background" in text or "change wallpaper" in text:
         img = r'C:\Users\Thejas SB\Downloads\SARO Heart\saro setting background'
@@ -413,14 +411,14 @@ def respond(text):
         print("  BACKGROUND CHANGED SUCCESSFULLY")
         say("BACKGROUND CHANGED SUCCESSFULLY")
 
-    # JOKES
+
 
     elif "say some joke" in text or "say some jokes" in text or "joke" in text or "jokes" in text:
         joke = pyjokes.get_joke()
         print(joke)
         say(joke)
 
-    # OPENING LOCATIONS
+
 
     elif "where is" in text:
         ind = text.lower().split().index("is")
@@ -432,7 +430,7 @@ def respond(text):
 
 
 
-    # SLEEP
+
 
     elif "wait" in text or "sleep" in text:
         print("  FOR HOW MANY SECONDS DO YOU WANT ME TO SLEEP")
@@ -441,19 +439,19 @@ def respond(text):
         time.sleep(a)
         say(a), say("SECONDS COMPLETED NOW YOU CAN ASK ME ANYTHING")
 
-    # EXIT
+
 
     elif "exit" in text or "quit" in text or "stop listening" in text or "break" in text:
         exit()
 
-    # SHUTDOWN
+
 
     elif "power of" in text or "power off system" in text or "power off the system" in text or "shutdown" in text:
         say("SHUTTING DOWN")
         os.system("shutdown /s /t 1")
 
 
-    # TO PLAY SONG
+
 
     elif "play" in text or "song" in text or "play a song" in text:
         print("  WHAT SONG I SHOULD PLAY")
@@ -472,7 +470,7 @@ def respond(text):
         pyautogui.press("enter")
         exit()
 
-    # EMAIL
+
 
     elif "send a mail" in text or "email" in text or "send a email" in text or "mail" in text:
         print("  TO WHOM I SEND")
